@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudiantes - Conexión Saber</title>
+    <link href="/src/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">Conexión Saber</h1>
+            <nav class="space-x-4 text-sm">
+                <a href="index.html" class="hover:text-blue-600">Inicio</a>
+                <a href="#" class="hover:text-blue-600">Cursos</a>
+                <a href="#" class="hover:text-blue-600">Eventos</a>
+                <a href="#" class="hover:text-blue-600">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bienvenida -->
+    <section class="bg-green-50 py-20 text-center px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-green-800 mb-4">Bienvenido, Estudiante</h2>
+            <p class="text-lg text-green-700">
+                Aquí encontrarás recursos, mentorías, retos y oportunidades para potenciar tu formación y conectar con
+                el talento regional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Explora Eventos de Formación (Cursos Destacados) -->
+
+    <section class="bg-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Explora áreas de formación</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Tecnología -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4">
+                        <i class="fas fa-laptop-code text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Tecnología</h3>
+                    <p class="text-gray-700 text-sm">
+                        Aprende desarrollo web, programación, ciberseguridad y más. Cursos orientados al futuro digital.
+                    </p>
+                </div>
+
+                <!-- Idiomas -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4">
+                        <i class="fas fa-language text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Idiomas</h3>
+                    <p class="text-gray-700 text-sm">
+                        Mejora tus competencias en inglés, francés, portugués y más con cursos prácticos y regionales.
+                    </p>
+                </div>
+
+                <!-- Liderazgo -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4">
+                        <i class="fas fa-users text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Liderazgo</h3>
+                    <p class="text-gray-700 text-sm">
+                        Desarrolla habilidades para liderar proyectos, equipos y mejorar tu impacto social y
+                        profesional.
+                    </p>
+                </div>
+
+                <!-- Arte y creatividad -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4">
+                        <i class="fas fa-paint-brush text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Arte y Creatividad</h3>
+                    <p class="text-gray-700 text-sm">
+                        Cursos en música, diseño, ilustración y creatividad digital para expandir tu expresión
+                        artística.
+                    </p>
+                </div>
+
+                <!-- Empleabilidad -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4">
+                        <i class="fas fa-briefcase text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Empleabilidad y Pasantías</h3>
+                    <p class="text-gray-700 text-sm">
+                        Prepárate para el mundo laboral: hoja de vida, entrevistas, networking y acceso a pasantías
+                        reales.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos y Ferias Estudiantiles -->
+
+    <section class="bg-green-50 py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Eventos y ferias para estudiantes</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 relative">
+                    <!-- Etiqueta NUEVO -->
+                    <span
+                        class="absolute top-4 right-4 bg-green-600 text-white text-xs px-3 py-1 rounded-full">¡Nuevo!</span>
+                    <!-- Ícono -->
+                    <div class="text-green-600 mb-4 text-4xl">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Feria de Innovación Universitaria</h3>
+                    <p class="text-gray-600 text-sm mb-3">Explora proyectos destacados de estudiantes de toda la región.
+                    </p>
+                    <p class="text-sm text-gray-500"><strong>Fecha:</strong> 10 de julio, 2025</p>
+                    <p class="text-sm text-gray-500"><strong>Modalidad:</strong> Presencial</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Ver
+                        más</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 relative">
+                    <div class="text-green-600 mb-4 text-4xl">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Hackathon Regional</h3>
+                    <p class="text-gray-600 text-sm mb-3">Compite creando soluciones a retos locales en equipo.</p>
+                    <p class="text-sm text-gray-500"><strong>Fecha:</strong> 24 de julio, 2025</p>
+                    <p class="text-sm text-gray-500"><strong>Modalidad:</strong> Virtual</p>
+                    <a href="#"
+                        class="mt-8 inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Inscribirme</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 relative">
+                    <div class="text-green-600 mb-4 text-4xl">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Semillero de Investigación Juvenil</h3>
+                    <p class="text-gray-600 text-sm mb-3">Conecta con mentores y desarrolla proyectos en ciencia y
+                        tecnología.</p>
+                    <p class="text-sm text-gray-500"><strong>Fecha:</strong> 15 de agosto, 2025</p>
+                    <p class="text-sm text-gray-500"><strong>Modalidad:</strong> Presencial</p>
+                    <a href="#"
+                        class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Explorar</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Postúlate a pasantías, retos o mentorías -->
+
+    <!-- Postúlate a pasantías, retos o mentorías -->
+    <section class="bg-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Postúlate a pasantías, retos o mentorías
+            </h2>
+            <p class="text-center text-gray-700 text-lg mb-8">
+                Encuentra oportunidades para fortalecer tus habilidades y conectar con el talento regional.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Pasantías -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4 text-green-600 text-4xl">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Pasantías</h3>
+                    <p class="text-gray-700 text-sm mb-4">
+                        Aplica tus conocimientos en proyectos reales y gana experiencia laboral.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Ver
+                        pasantías</a>
+                </div>
+
+                <!-- Retos -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4 text-green-600 text-4xl">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Retos</h3>
+                    <p class="text-gray-700 text-sm mb-4">
+                        Participa en competencias donde puedes demostrar tus habilidades y ganar premios.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Ver
+                        retos</a>
+                </div>
+
+                <!-- Mentorías -->
+                <div class="bg-green-50 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4 text-green-600 text-4xl">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Mentorías</h3>
+                    <p class="text-gray-700 text-sm mb-4">
+                        Conéctate con mentores que te guiarán en tu desarrollo profesional.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Ver
+                        mentorías</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Recursos útiles para tu carrera académica -->
+
+    <!-- Recursos útiles para tu carrera académica -->
+    <section class="bg-green-50 py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Recursos útiles para tu carrera académica
+            </h2>
+            <p class="text-center text-gray-700 text-lg mb-8">
+                Accede a herramientas, guías y plataformas que te ayudarán a avanzar en tu formación académica.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Biblioteca Virtual -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4 text-green-600 text-4xl">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Biblioteca Virtual</h3>
+                    <p class="text-gray-700 text-sm mb-4">
+                        Accede a libros, artículos y documentos académicos de libre consulta.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Explorar</a>
+                </div>
+
+                <!-- Guías y Tutoriales -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4 text-green-600 text-4xl">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Guías y Tutoriales</h3>
+                    <p class="text-gray-700 text-sm mb-4">
+                        Descubre materiales didácticos y tutoriales prácticos para mejorar tus competencias.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Ver
+                        Guías</a>
+                </div>
+
+                <!-- Plataformas de Aprendizaje -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="mb-4 text-green-600 text-4xl">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Plataformas de Aprendizaje</h3>
+                    <p class="text-gray-700 text-sm mb-4">
+                        Conéctate a cursos en línea y recursos educativos de alta calidad.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 text-sm text-center">Ir
+                        a Plataformas</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TEstimonios Estudiantiles -->
+
+    <!-- Testimonios estudiantiles -->
+    <section class="bg-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-green-800 mb-12">Testimonios estudiantiles</h2>
+            <p class="text-center text-gray-700 text-lg mb-8">
+                Conoce las experiencias de estudiantes que han aprovechado nuestras oportunidades de formación.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <!-- Testimonio 1 -->
+                <div class="bg-green-50 p-8 rounded-xl shadow-md hover:shadow-xl transition flex items-center">
+                    <img src="https://via.placeholder.com/150" alt="Estudiante 1" class="w-32 h-32 rounded-full mr-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-2">Laura Ramírez</h3>
+                        <p class="text-gray-700 text-sm">
+                            "Participar en las mentorías me ayudó a desarrollar habilidades que no sabía que tenía.
+                            Ahora me siento más segura en mis proyectos."
+                        </p>
+                        <p class="text-gray-600 text-sm mt-2">Ingeniería de Sistemas - Universidad Regional</p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="bg-green-50 p-8 rounded-xl shadow-md hover:shadow-xl transition flex items-center">
+                    <img src="https://via.placeholder.com/150" alt="Estudiante 2" class="w-32 h-32 rounded-full mr-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-2">Carlos Mejía</h3>
+                        <p class="text-gray-700 text-sm">
+                            "Gracias a los cursos de empleabilidad, conseguí una pasantía que marcó un antes y un
+                            después en mi carrera."
+                        </p>
+                        <p class="text-gray-600 text-sm mt-2">Administración de Empresas - UFPSO
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-green-50 p-8 rounded-xl shadow-md hover:shadow-xl transition flex items-center">
+                    <img src="https://via.placeholder.com/150" alt="Estudiante 3" class="w-32 h-32 rounded-full mr-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-2">María López</h3>
+                        <p class="text-gray-700 text-sm">
+                            "Los retos estudiantiles me motivaron a dar lo mejor de mí. Fue increíble ver mi idea
+                            convertirse en un proyecto real."
+                        </p>
+                        <p class="text-gray-600 text-sm mt-2">Diseño Gráfico - UFPSO</p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="bg-green-50 p-8 rounded-xl shadow-md hover:shadow-xl transition flex items-center">
+                    <img src="https://via.placeholder.com/150" alt="Estudiante 4" class="w-32 h-32 rounded-full mr-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-2">Juan Pérez</h3>
+                        <p class="text-gray-700 text-sm">
+                            "Ser parte de la comunidad Conexión Saber me permitió conocer estudiantes con las mismas
+                            ganas de crecer."
+                        </p>
+                        <p class="text-gray-600 text-sm mt-2">Comunicación Social - FESC</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botón compartir -->
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 text-lg">¡Comparte
+                    tu experiencia!</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+
+
+    <footer class="bg-gray-800 text-white py-24 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-5 gap-14">
+
+            <!-- Marca / eslogan -->
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold">Conexión Saber</h2>
+                <p class="text-lg text-gray-400 mt-6 leading-relaxed">
+                    Plataforma que impulsa la formación de estudiantes y profesionales con talento local.
+                </p>
+
+                <!-- Redes Sociales -->
+                <div class="flex space-x-5 mt-8">
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+                        class="hover:text-blue-400 transition text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+                        class="hover:text-blue-500 transition text-2xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+                        class="hover:text-pink-400 transition text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+                        class="hover:text-white transition text-2xl">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+                        class="hover:text-blue-300 transition text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Compañía -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6">Compañía</h3>
+                <ul class="space-y-3 text-gray-300 text-base">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Aliados</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                </ul>
+            </div>
+
+            <!-- Recursos -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6">Recursos</h3>
+                <ul class="space-y-3 text-gray-300 text-base">
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6">Contáctanos</h3>
+                <ul class="space-y-3 text-gray-300 text-base">
+                    <li>Email: contacto@conectaregion.com</li>
+                    <li>Tel: +57 312 345 6789</li>
+                    <li>Dirección: Calle 123 #45-67, Colombia</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Créditos -->
+        <div class="px-20 text-gray-500 text-base mt-[100px]">
+            © 2025 Conexión Saber. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+
+</html>

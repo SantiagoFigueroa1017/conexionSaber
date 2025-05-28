@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profesionales - Conexión Saber</title>
+    <link href="/src/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4">
+        <div class="max-w-7xl mx-auto flex justify-center items-center">
+            
+            <nav class="space-x-4 text-sm">
+                <a href="index.html" class="hover:text-blue-600">
+                    <h1 class="text-xl font-bold text-gray-800">Conexión Saber</h1>
+                </a>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gray-100 py-20 px-6">
+        <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-md">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-6">Registrarse</h2>
+
+            <!-- Selector de Rol -->
+            <label for="role-register" class="block text-sm font-medium text-gray-700">Selecciona tu rol:</label>
+            <select id="role-register" name="role-register" class="mb-4 w-full p-2 border rounded-md">
+                <option value="estudiante">Estudiante</option>
+                <option value="profesional">Profesional</option>
+            </select>
+
+            <!-- Campos de Registro -->
+            <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo:</label>
+            <input type="text" id="name" name="name" class="mb-4 w-full p-2 border rounded-md" placeholder="Juan Pérez"
+                required>
+
+            <label for="email-register" class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
+            <input type="email" id="email-register" name="email-register" class="mb-4 w-full p-2 border rounded-md"
+                placeholder="ejemplo@correo.com" required>
+
+            <label for="password-register" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+            <input type="password" id="password-register" name="password-register"
+                class="mb-4 w-full p-2 border rounded-md" placeholder="********" required>
+
+            <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirmar Contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password"
+                class="mb-6 w-full p-2 border rounded-md" placeholder="********" required>
+
+            <button class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700">Registrarse</button>
+
+            <!-- Enlace de Inicio de Sesión -->
+            <p class="mt-4 text-sm text-center text-gray-600">
+                ¿Ya tienes una cuenta?
+                <a href="/pages/inicioSesion.html" class="text-green-600 hover:underline">Inicia sesión aquí</a>
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-800 text-white py-24 px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-5 gap-14">
+
+            <!-- Marca / eslogan -->
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold">Conexión Saber</h2>
+                <p class="text-lg text-gray-400 mt-6 leading-relaxed">
+                    Plataforma que impulsa la formación de estudiantes y profesionales con talento local.
+                </p>
+
+                <!-- Redes Sociales -->
+                <div class="flex space-x-5 mt-8">
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+                        class="hover:text-blue-400 transition text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+                        class="hover:text-blue-500 transition text-2xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+                        class="hover:text-pink-400 transition text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+                        class="hover:text-white transition text-2xl">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+                        class="hover:text-blue-300 transition text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Compañía -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6">Compañía</h3>
+                <ul class="space-y-3 text-gray-300 text-base">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Aliados</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                </ul>
+            </div>
+
+            <!-- Recursos -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6">Recursos</h3>
+                <ul class="space-y-3 text-gray-300 text-base">
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6">Contáctanos</h3>
+                <ul class="space-y-3 text-gray-300 text-base">
+                    <li>Email: contacto@conectaregion.com</li>
+                    <li>Tel: +57 312 345 6789</li>
+                    <li>Dirección: Calle 123 #45-67, Colombia</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Créditos -->
+        <div class="px-20 text-gray-500 text-base mt-[100px]">
+            © 2025 Conexión Saber. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+
+</html>
