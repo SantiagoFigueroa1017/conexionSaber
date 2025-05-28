@@ -15,36 +15,56 @@
 <body class="bg-gray-100 font-sans min-h-screen flex flex-col">
 
   <!-- Menú superior -->
-  <header class="bg-blue-600 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+<header class="bg-blue-600 text-white shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
-      <!-- Logo y nombre -->
-      <div class="flex items-center space-x-4">
-        <a href="index.html">
-          <img src="public/img/logo.png" alt="Logo Conexión Saber" class="w-16 h-16 rounded-xl">
-        </a>
-        <div class="text-2xl font-bold tracking-wide">Conexión Saber</div>
-      </div>
-
-      <!-- Navegación -->
-      <nav class="hidden md:flex space-x-6 text-base font-medium">
-        <a href="index.html" class="hover:underline">Inicio</a>
-        <a href="pages/quienesSomos.html" class="hover:underline">Quiénes somos</a>
-        <a href="pages/noticias.html" class="hover:underline">Noticias</a>
-        <a href="pages/proyectos.html" class="hover:underline">Proyectos</a>
-        <a href="pages/contacto.html" class="hover:underline">Contacto</a>
-      </nav>
-
-      <!-- Botones de acceso -->
-      <div class="space-x-4 text-sm">
-        <a href="pages/inicioSesion.html"
-          class="bg-white text-indigo-900 font-semibold px-4 py-2 rounded hover:bg-indigo-100">Iniciar sesión</a>
-        <a href="pages/registro.htm"
-          class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Registrarse</a>
-      </div>
-
+    <!-- Logo y nombre -->
+    <div class="flex items-center space-x-4">
+      <a href="index.html">
+        <img src="public/img/logo.png" alt="Logo Conexión Saber" class="w-16 h-16 rounded-xl">
+      </a>
+      <div class="text-2xl font-bold tracking-wide">Conexión Saber</div>
     </div>
-  </header>
+
+    <!-- Botón menú móvil -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <i class="fas fa-bars text-white text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Navegación -->
+    <nav id="nav-menu" class="hidden md:flex space-x-6 text-base font-medium">
+      <a href="index.html" class="hover:underline">Inicio</a>
+      <a href="pages/quienesSomos.html" class="hover:underline">Quiénes somos</a>
+      <a href="pages/noticias.html" class="hover:underline">Noticias</a>
+      <a href="pages/proyectos.html" class="hover:underline">Proyectos</a>
+      <a href="pages/contacto.html" class="hover:underline">Contacto</a>
+    </nav>
+
+    <!-- Botones de acceso -->
+    <div class="hidden md:flex space-x-4 text-sm">
+      <a href="pages/inicioSesion.html" class="bg-white text-indigo-900 font-semibold px-4 py-2 rounded hover:bg-indigo-100">Iniciar sesión</a>
+      <a href="pages/registro.htm" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Registrarse</a>
+    </div>
+  </div>
+
+  <!-- Menú móvil desplegable -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+    <nav class="flex flex-col space-y-3 text-base font-medium">
+      <a href="index.html" class="hover:underline">Inicio</a>
+      <a href="pages/quienesSomos.html" class="hover:underline">Quiénes somos</a>
+      <a href="pages/noticias.html" class="hover:underline">Noticias</a>
+      <a href="pages/proyectos.html" class="hover:underline">Proyectos</a>
+      <a href="pages/contacto.html" class="hover:underline">Contacto</a>
+      <a href="pages/inicioSesion.html" class="bg-white text-indigo-900 font-semibold px-4 py-2 rounded hover:bg-indigo-100">Iniciar sesión</a>
+      <a href="pages/registro.htm" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Registrarse</a>
+    </nav>
+  </div>
+
+  
+</header>
+
 
 
   <!-- Selección de Rol -->
@@ -330,3 +350,13 @@
 </body>
 
 </html>
+
+<script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>

@@ -15,14 +15,43 @@
 
     <header class="bg-indigo-900 text-white shadow-md p-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="../index.html">Conexión Saber</a>
+            <!-- Logo y nombre -->
+            <div class="flex items-center space-x-4">
+                <a href="../index.html">
+                    <img src="../public/img/logo.png" alt="Logo Conexión Saber" class="w-12 h-12 rounded-xl">
+                </a>
+                <div class="text-xl font-bold">Conexión Saber</div>
+            </div>
 
-            <nav class="space-x-4 text-sm">
+            <!-- Botón menú móvil -->
+            <div class="md:hidden">
+                <button id="menu-toggle-pro" class="focus:outline-none">
+                    <i class="fas fa-bars text-white text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Navegación -->
+            <nav id="nav-menu-pro" class="hidden md:flex space-x-6 text-sm font-medium">
                 <a href="../index.html" class="hover:text-green-400">Inicio</a>
-                <a href="eventoProfesionales.html" class="hover:text-green-400">Eventos</a>
-                <a href="#" class="hover:text-green-400">Contacto</a>
+                <a href="quienesSomos.html" class="hover:text-green-400">Quiénes Somos</a>
+                <a href="noticias.html" class="hover:text-green-400">Noticias</a>
+                <a href="proyectos.html" class="hover:text-green-400">Proyectos</a>
+                <a href="contacto.html" class="hover:text-green-400">Contacto</a>
             </nav>
         </div>
+
+        <!-- Menú móvil desplegable -->
+        <div id="mobile-menu-pro" class="md:hidden hidden px-6 pb-4">
+            <nav class="flex flex-col space-y-3 text-sm font-medium">
+                <a href="../index.html" class="hover:text-green-400">Inicio</a>
+                <a href="quienesSomos.html" class="hover:text-green-400">Quiénes Somos</a>
+                <a href="noticias.html" class="hover:text-green-400">Noticias</a>
+                <a href="proyectos.html" class="hover:text-green-400">Proyectos</a>
+                <a href="contacto.html" class="hover:text-green-400">Contacto</a>
+            </nav>
+        </div>
+
+
     </header>
 
     <!-- Encabezado -->
@@ -209,3 +238,12 @@
 </body>
 
 </html>
+
+<script>
+    const togglePro = document.getElementById('menu-toggle-pro');
+    const mobileMenuPro = document.getElementById('mobile-menu-pro');
+
+    togglePro.addEventListener('click', () => {
+        mobileMenuPro.classList.toggle('hidden');
+    });
+</script>
