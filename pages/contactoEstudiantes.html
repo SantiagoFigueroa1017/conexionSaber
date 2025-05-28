@@ -13,60 +13,78 @@
 
 <body class="bg-gray-100 font-sans">
 
-    <header class="bg-indigo-900 text-white shadow-md p-4">
+    <header class="bg-white  shadow-md p-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="../index.html">Conexión Saber</a>
-            
+
             <nav class="space-x-4 text-sm">
-                <a href="../index.html" class="hover:text-green-400">Inicio</a>
-                <a href="cursoEstudiantes.html" class="hover:text-green-400">Cursos</a>
-                <a href="eventoProfesionales.html" class="hover:text-green-400">Eventos</a>
-                <a href="contacto.html" class="hover:text-green-400">Contacto</a>
+                <a href="../index.html" class="hover:text-indigo-400">Inicio</a>
+                <a href="cursoEstudiantes.html" class="hover:text-indigo-400">Cursos</a>
+                <a href="eventoEstudiantes.html" class="hover:text-indigo-400">Eventos</a>
+                <a href="contactoEstudiantes.html" class="hover:text-indigo-400">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <section class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-indigo-700 text-white py-20 px-6 text-center">
+    <!-- Encabezado -->
+    <section class="bg-green-50 py-20 px-6 text-center">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl font-bold mb-4">Quiénes somos</h1>
-            <p class="text-lg text-indigo-200">
-                Conexión Saber es una iniciativa creada para transformar la educación y el desarrollo regional a través
-                de la tecnología y el conocimiento compartido.
-            </p>
+            <h1 class="text-4xl font-bold mb-4 text-green-800">Contáctanos</h1>
+            <p class="text-gray-700 text-lg">¿Tienes preguntas, propuestas o deseas colaborar? Escríbenos.</p>
         </div>
     </section>
 
-    <section class="bg-white text-gray-800 py-20 px-6">
+    <!-- Formulario e información -->
+    <section class="bg-white py-16 px-6">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-            <!-- Misión -->
-            <div>
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4">Nuestra Misión</h2>
-                <p class="text-gray-600 text-lg leading-relaxed">
-                    Brindar acceso a formación de calidad, conectando a estudiantes y profesionales con oportunidades de
-                    aprendizaje, colaboración y crecimiento, mediante una plataforma accesible y localmente relevante.
-                </p>
+
+            <!-- Formulario -->
+            <form class="bg-indigo-50 p-8 rounded-xl shadow-md space-y-6">
+                <div>
+                    <label class="block text-indigo-700 font-semibold mb-2">Nombre</label>
+                    <input type="text"
+                        class="w-full border border-indigo-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-indigo-700 font-semibold mb-2">Correo electrónico</label>
+                    <input type="email"
+                        class="w-full border border-indigo-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label class="block text-indigo-700 font-semibold mb-2">Mensaje</label>
+                    <textarea rows="5"
+                        class="w-full border border-indigo-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                </div>
+                <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
+                    Enviar mensaje
+                </button>
+            </form>
+
+            <!-- Información de contacto -->
+            <div class="text-gray-800">
+                <h2 class="text-2xl font-bold text-indigo-700 mb-6">Información de contacto</h2>
+                <p class="mb-4">Estamos disponibles para resolver dudas, recibir sugerencias y establecer alianzas
+                    estratégicas.</p>
+                <ul class="space-y-4">
+                    <li><strong>Email:</strong> mytarazonas@ufpso.edu.co - msfigueroam@ufpso.edu.co</li>   
+                    <li><strong>Teléfono:</strong> 313 339 9287 - 311 4475616</li>
+                    <li><strong>Dirección:</strong> Calle 17 #09-08, Ocaña, Colombia</li>
+                    
+                </ul>
+
+                <!-- Redes sociales -->
+                <div class="flex space-x-4 mt-8 text-2xl text-indigo-700">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-            <!-- Visión -->
-            <div>
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4">Nuestra Visión</h2>
-                <p class="text-gray-600 text-lg leading-relaxed">
-                    Ser un referente regional en formación digital inclusiva, impulsando el talento local y
-                    contribuyendo al desarrollo sostenible de nuestras comunidades.
-                </p>
-            </div>
+
         </div>
     </section>
 
-    <section class="bg-indigo-50 py-20 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-indigo-800 mb-8">¿Por qué existimos?</h2>
-            <p class="text-lg text-indigo-700 max-w-3xl mx-auto">
-                Nacimos de una necesidad real: muchas personas en la región no cuentan con acceso a formación
-                pertinente, actualizada y contextualizada. Conexión Saber es una respuesta directa para cerrar esa
-                brecha y potenciar el desarrollo humano y profesional.
-            </p>
-        </div>
-    </section>
+
+
 
 
 
